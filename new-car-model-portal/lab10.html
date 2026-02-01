@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New Car Model Portal</title>
+<style>
+@keyframes bgChange {
+    0% {background-color: #fce4ec;}
+    25% {background-color: #e8f5e9;}
+    50% {background-color: #e3f2fd;}
+    75% {background-color: #fff3e0;}
+    100% {background-color: #fce4ec;}
+}
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial;
+    animation: bgChange 12s infinite;
+}
+@keyframes rotateLogo {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(180deg);}
+}
+.logo {
+    width: 120px;
+    animation: rotateLogo 3s infinite linear;
+    margin-top: 20px;
+}
+.car-img {
+    width:350px;
+    transition:transform 0.5s ease;
+}
+.car-img:hover {
+    transform:scale(2);
+}
+
+.description::selection {
+    transform:skewX(5deg);
+    background:yellow;
+}
+
+@keyframes moveText {
+    0% {left: 0;}
+    50% {left:80%;}
+    100% {left:0;}
+}
+.book {
+    position: absolute;
+    bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    animation: moveText 4s infinite linear;
+    color: #000;
+}
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+<div class="top-left">
+    Reg No:24BCE5041<br>
+    Name: MEGHAVARDINI.P<br>
+    Date: 17.01.2026
+</div>
+<img src="logo.png" class="logo">
+<h1>Introducing Our All-New Car Model</h1>
+<img src="car.jpg" class="car-img">
+<p class="description" style="width: 70%; margin: auto; font-size: 18px;">
+The new Falcon X1 is engineered for breakthrough performance, ultra–modern design, 
+and enhanced safety features. Equipped with a turbo-charged hybrid engine, digital cockpit, 
+AI-assisted driving mode,and premium aerodynamic body structure.
+</p>
+<div class="book">BOOK NOW</div>
+</body>
+</html>
